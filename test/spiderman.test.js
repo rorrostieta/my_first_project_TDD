@@ -5,17 +5,17 @@ describe('Unit Tests for Spiderman class', () => {
 
     // Escribimos codigo a utilizar tal cual
     // Quisieramos hacer un objeto de spiderman con la informacion
-    const tomHolland = new Spiderman('Spiderman Marvel', 23, 'Tom Holland', 5, 'Disney')
+    const tomHolland = new Spiderman('Spiderman Marvel', 23, 'Tom Holland', 5, 'Marvel')
 
     // Validacion que el codigo funcione de la manera esperada
     expect(tomHolland.name).toBe('Spiderman Marvel')
     expect(tomHolland.age).toBe(23)
     expect(tomHolland.actor).toBe('Tom Holland')
     expect(tomHolland.movies).toBe(5)
-    expect(tomHolland.studio).toBe('Disney')
+    expect(tomHolland.studio).toBe('Marvel')
   }),
   test('2) USe the method getInfo()', () =>{
-    const tomHolland = new Spiderman('Spiderman Marvel', 23, 'Tom Holland', 5, 'Disney')
+    const tomHolland = new Spiderman('Spiderman Marvel', 23, 'Tom Holland', 5, 'Marvel')
     expect(tomHolland.getInfo()).toBe("Hey I'm Tom Holland from Marvel studio")
   });
 })
