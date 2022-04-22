@@ -5,10 +5,9 @@ class Spiderman {
     this.actor = actor
     this.movies = movies
     this.studio = studio
-  },
-
+  }
   getInfo(){
-    return `Hey I'm ${this.name} from ${this.studio}`
+    return `Hey I'm ${this.actor} from ${this.studio}`
   }
 }
 
